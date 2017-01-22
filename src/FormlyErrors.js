@@ -64,9 +64,17 @@ export default class FormlyErrors {
   }
 
   /**
-   * Clear all of the errors currently in the collection.
+   * Clear one or all error fields.
+   *
+   * @param {string|null} field
    */
-  clear () {
+  clear (field) {
+    if (field) {
+      delete this.errors[field]
+
+      return
+    }
+
     this.errors = {}
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "formly",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple form helper for Vue.js",
   "main": "dist/Formly.js",
   "scripts": {
